@@ -8,8 +8,7 @@ import { geoData } from "state/geoData";
 const Geography = () => {
   const theme = useTheme();
   const { data } = useGetGeographyQuery();
-  const colors = ["#d73027", "#f46d43", "#fdae61", "#fee08b", "#d9ef8b", "#a6d96a", "#66bd63", "#1a9850", "#006837"];
-
+  
   return (
     <Box m="1.5rem 2.5rem">
       <Header title="GEOGRAPHY" subtitle="Find where your users are located." />
@@ -91,8 +90,7 @@ const Geography = () => {
                 ],
               },
             ]}
-            colors={colors}
-            
+           
           />
         ) : (
           <>Loading...</>

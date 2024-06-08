@@ -41,10 +41,12 @@ app.use("/sales", salesRoutes);
 
 const PORT = process.env.PORT;
 mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URL 
+  //   {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true,
+  // }
+)
   .then(() => {
     app.listen(PORT, () =>
       console.log(` Connected Server running at Port ${PORT}`)
